@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Quicksand:wght@400;700&display=swap');
+
+*{
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+	width: 100%;
+  transform: translateY(100px);
+}
+#container{
+
+	transform: translateY(100px);
+}
+
+header{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 5% 20px 6%;
+  background: #131313;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+}
+
+
+.featured-image{
+  width: 100%;
+  max-height: 800px;
+	object-fit: cover;
+	object-position: center;
+  transform: translateY(80px);
+}
+
+
+.logoputih{
+  cursor: pointer;
+  padding-top: 0px;
+  padding-bottom: 5px;
+	width: 230px;
+	max-height: 300px;
+	object-fit: cover;
+	object-position: left;
+}
+
+h2{
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-top: 50px;
+}
+
+p{
+  width: 50%;
+  height: 100%;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px;
+}
+
+nav{
+  list-style: none;
+}
+
+nav ul{
+  display: flex;
+  width: 40%;
+  padding: 5px;
+}
+
+nav li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+nav a{
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+nav a:hover{
+  font-weight:550;
+  color: #ffc50e;
+}
+
+
+
+.toggle-button{
+  display: inline-block;
+  position: absolute;
+  top: 0rem;
+  right: 1.7rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 125px;
+}
+
+.toggle-button input{
+  position: absolute;
+  height: 30px;
+  width: 40px;
+  left: -2px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.toggle-button .bar{
+  height: 4px;
+  width: 100%;
+  margin: 2.5px;
+  background-color: white;
+  border-radius: 0.8px;
+  transition: all 0.5s ease 0s;
+}
+
+/* hamburger animation*/
+.toggle-button span:nth-child(2){
+  transform-origin: 0 0;
+}
+
+.toggle-button span:last-child{
+  transform-origin: 0 100%;
+}
+
+
+.toggle-button input:checked ~ span:nth-child(2){
+  transform: rotate(45deg) translate(-1px, -1px);
+  background-color: white;
+
+}
+
+.toggle-button input:checked ~ span:last-child{
+  transform: rotate(-45deg) translate(-1px, 0px);
+  background-color: white;
+}
+
+.toggle-button input:checked ~ span:nth-child(3){
+  opacity: 0;
+  transform: scale(0);
+}
+
+
+.card1{
+	box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	padding: 20px;
+  margin: 50px;
+  display: flex;
+  background-color: white;
+  justify-content: space-evenly;
+  align-items: center;
+	transition: 0.2s ease;
+}
+
+aside{
+  transform: translateY(140px);
+  align-items: center;
+	display: flex;
+	margin: 50px;
+	justify-content: space-around;
+}
+.profilecard{
+	box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	padding: 20px;
+	margin: 10px;
+  display: flex;
+  background-color: white;
+  justify-content:space-around;
+  align-items: center;
+	width: 50%;
+	float: left;
+	transition: 0.2s ease;
+
+}
+.Contacts{
+	box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	padding: 10px;
+	margin: 10px;
+	display: flex;
+  background-color: white;
+  align-items: center;
+	width: 40%;
+	float: right;
+	flex-direction: column;
+	transition: 0.2s ease;
+}
+
+.card1:hover, .profilecard:hover, .Contacts:hover{
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+
+
+.project-image{
+	width: 300px;
+	max-height: 500px;
+	object-fit:cover;
+}
+
+.project-image2{
+	width:500px;
+	max-height: 300px;
+	object-fit:contain;
+}
+
+
+
+
+
+table{
+  padding: 20px;
+  width: 70%;
+
+	display: flex;
+}
+table tr{
+		justify-content: center;
+}
+
+table th, td{
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  width: 50%;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+
+
+}
+table th{
+  font-weight: 500;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+	padding: 50px;
+	color: white;
+	background-color: #131313;
+  text-align: center;
+  font-weight: 400;
+  transform: translateY(140px);
+}
+
+
+footer p{
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px){
+  .card1,.profilecard, .Contacts{
+      flex-direction: column;
+  }
+	.profilecard, .Contacts{
+		width: 100%;
+		margin: 50px 0px;
+		padding: 15px ;
+		float: none;
+	}
+  p{
+    padding: 8px 15px;
+    width: 100%;
+  }
+  .project-image2{
+    width: 100%;
+  }
+  header{
+      padding: 20px 4%;
+  }
+  .logo{
+      width: 210px;
+  }
+  nav li{
+    padding: 0px 8px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .card1, .profilecard, .Contacts{
+      flex-direction: column;
+
+  }
+	aside{
+		margin: 50px;
+	}
+	.profilecard, .Contacts{
+		width: 100%;
+		margin: 50px 0px;
+		padding: 15px ;
+		float: none;
+	}
+	.Contacts{
+		margin-bottom: 20px;
+	}
+
+	table{
+	  padding: 20px;
+	  width: 100%;
+		padding-top: 30px;
+		display: flex;
+	}
+
+	table th, td{
+
+	  font-size: 20px;
+	}
+
+  p{
+    padding: 8px 15px;
+    width: 100%;
+  }
+  .project-image2{
+    width: 100%;
+  }
+  .toggle-button{
+    display: flex;
+  }
+
+  header{
+    padding: 15px 3%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo{
+    	width: 200px;
+  }
+
+  header.slide{
+    background-color: #131313;
+    transition: 1s;
+  }
+
+
+
+  nav{
+      width: 100vh;
+      display: flex;
+      left: 0;
+  }
+  nav ul{
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    background-color: #131313;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -1;
+    transform: translate(-3%, -70%);
+    opacity: 0;
+    transition: all 1s ease;
+
+  }
+
+  nav ul.slide{
+    transform: translate(-3%, 9%);
+    opacity: 0.9;
+    z-index: 2;
+  }
+
+  nav li{
+    text-align: center;
+    padding: 5px;
+  }
+
+  nav a{
+    color: white;
+  }
+
+}
